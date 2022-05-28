@@ -1,8 +1,8 @@
 #!/bin/bash
-cd QA
-mkdir 1 2 3
-cd 1
-touch 1.txt 2.txt 3.txt 1.json 2.json
-mkdir 1 2 3 
+cd foldername
+mkdir foldername{1..3}
+cd foldername1
+touch file{1..3}.txt file{1,2}.json 
+mkdir foldername{1..3}
 ls -la
-mv 1.txt 1.json /Users/julia/QA/2
+mv /Users/julia/foldername/foldername1/{1..2}.txt /Users/julia/foldername/foldername2
