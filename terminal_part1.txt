@@ -1,0 +1,92 @@
+Username telegram : panda.panda10
+
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+
+1) Посмотреть где я
+pwd
+2) Создать папку
+mkdir foldername
+3) Зайти в папку
+cd foldername
+4) Создать 3 папки
+mkdir foldername1 foldername2 foldername3
+5) Зайти в любую папку
+cd foldername1
+6) Создать 5 файлов (3 txt, 2 json)
+touch file1.txt file2.txt file3.txt file1.json file2.json 
+7) Создать 3 папки
+mkdir foldername1 foldername2 foldername3
+8). Вывести список содержимого папки - 
+ls
+ls -la
+ls -l
+ls -a
+9) Открыть любой txt файл 
+cat >> file1.txt
+10) Написать туда что-нибудь, любой текст
+...
+11) Сохранить и выйти
+control+C
+12) Выйти из папки на уровень выше
+cd ../
+13) Переместить любые 2 файла, которые вы создали, в любую другую папку
+cd foldername1
+mv file1.txt file1.json /Users/julia/foldername/foldername2
+или
+cd foldername
+mv foldername2/file1.txt foldername1
+mv foldername2/file1.json foldername1
+14) Скопировать любые 2 файла, которые вы создали, в любую другую папку
+cd foldername/foldername2
+cp file1.txt file1.json /Users/julia/foldername/foldername1
+или
+cd foldername
+cp foldername2/file1.txt foldername1
+cp foldername2/file1.json foldername1
+15) Найти файл по имени
+find /Users/julia/foldername/ -name file1.txt 
+mdfind file1 - поиск не только в названии файлов, но и внутри документов, и в метаданных
+mdfind -name file1 - поиск только в названиях файлов
+mdfind file1.txt -onlyin /Users/julia/foldername/ - поиск в конкретной директории(включая уровни ниже)
+
+
+16) Просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+ls | grep foldername - поиск в папке с содержимым "foldername"
+или
+cd foldername/foldername1
+grep '...' file1.txt - поиск текста в указанном файле
+или
+cd foldername
+grep -r "..." foldername1/ - поиск текста в указанной папке
+17) Вывести несколько первых строк из текстового файла
+cd foldername/foldername1
+head -2 file1.txt - показать первые 2 строки в файле
+18) Вывести несколько последних строк из текстового файла
+tail -2 file1.txt - показать последние 2 строки в файле
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает
+less file1.txt
+Q - выйти с просмотра
+20) Вывести дату и время
+date
+
+Задание *
+1) Отправить http запрос на сервер http://162.55.220.72:5005/terminal-hw-request
+curl http://162.55.220.72:5005/terminal-hw-request
+task_1 
+curl http://162.55.220.72:5005/get_method?name=Julia&age=28
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+cd
+nano myscript.sh
+
+#!/bin/bash
+cd QA
+mkdir fn1 fn2 fn3
+cd 1
+touch f1.txt f2.txt f3.txt f1.json f2.json
+mkdir fn1 fn2 fn3
+ls -la
+mv f1.txt f1.json /Users/julia/QA/fn2
+
+bash myscript.sh
