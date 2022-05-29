@@ -53,10 +53,9 @@ grep hello /Users/julia/foldername/foldername1/file1.txt - поиск текст
 или
 grep -r hello /Users/julia/foldername/foldername1/ - поиск текста в указанной папке
 17) Вывести несколько первых строк из текстового файла
-cd foldername/foldername1
-head -2 file1.txt - показать первые 2 строки в файле
+head -2 /Users/julia/foldername/foldername1/file1.txt - показать первые 2 строки в файле
 18) Вывести несколько последних строк из текстового файла
-tail -2 file1.txt - показать последние 2 строки в файле
+tail -2 /Users/julia/foldername/foldername1/file1.txt - показать последние 2 строки в файле
 19) Просмотреть содержимое длинного файла (команда less) изучите как она работает
 less /Users/julia/foldername/foldername1/file1.txt
 или
