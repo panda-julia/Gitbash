@@ -77,17 +77,21 @@ ctrl + C
 
  13). Через cat добавить в текстовый файл tf_2.txt строку “the seConD 2”
 
-cat >> tf_2.txt
+cat >> ../tf_2.txt
 the seConD 2
 Enter
 ctrl + C  
 
  14). Сделать текстовый файл tf_4.txt в котором будет 15 строк.
 
+printf "%s hello\n" {1..15} > tf_4.txt
+или
 echo "hello1" "\nhello"{2..15} > tf_4.txt
 
  15). Сделать текстовый файл tF_5.txt в котором будет 13 строк.
-
+ 
+printf "%s hello\n" {1..13} > tf_5.txt
+или
 echo "hello1" "\nhello"{2..13} > tF_5.txt
 
  16). Вывести список всех файлов в папке.
