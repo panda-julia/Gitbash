@@ -70,7 +70,7 @@ ctrl + C
 
  12). Через cat добавить в текстовый файл tf_3.txt строку “the SeCoNd 2”
 
-cat >> tf_3.txt
+cat >> ../tf_3.txt
 the SeCoNd 2 
 Enter
 ctrl + C
