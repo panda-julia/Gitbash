@@ -63,7 +63,7 @@ ctrl + C
 
  11). Через cat добавить в текстовый файл tf_2.txt строку “the sec 3”
 
-cat >> tf_2.txt
+cat >> ../tf_2.txt
 the sec 3
 Enter
 ctrl + C
